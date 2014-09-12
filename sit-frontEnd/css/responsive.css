@@ -1,0 +1,111 @@
+@media (min-width: 768px) and (max-width: 979px) {
+	.header-right {
+		padding-left: 15px;
+	}
+	.header-left {
+		padding-right: 15px;		
+	}
+	.filter{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/* body{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.container{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.menu{
+		max-width: 100%;
+		margin: 0 auto 0;
+	} */
+	.nav-header {
+		height: 66px;
+	}
+	.filter{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	/* body{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.container{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.menu{
+		max-width: 100%;
+		margin: 0 auto 0;
+	} */
+	.header-right {
+		padding-right: 5px;
+		padding-top: 4px;
+	}
+	.header-left {
+		padding-top: 5.5px;
+		padding-left: 5px;		
+	}	
+	.nav-title {
+		display: none !important;
+	}
+	.nav-title-resp{
+		display: block !important;
+	}
+	.filter{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.filter-category{
+		width: 100%;
+		padding-bottom: 5px;
+	}
+}
+
+@media (max-width: 320px) {
+	.carousel {
+		padding-bottom: 0;
+	}
+	.menu{
+		padding: 15px 9px 10px;
+	}
+	.home h2 {
+		font-size: 20px;
+	}
+	.btn-ppc-home{
+		padding: 5px;
+		font-size: 16px;
+	}
+	.sn-icon{
+		font-size: 1em;
+	}
+	.name-party{
+		font-size: 30px;
+	}
+	.district{
+		font-size: 50px;
+		color: #FF3434;
+		font-weight: bold;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+	.header-right {
+		padding-right: 2px;
+	}
+	.header-left {
+		padding-left: 2px;		
+	}
+	.header-center{
+		padding-left: 0px;
+	}
+	.nav-title {
+		display: none !important;
+	}
+}
