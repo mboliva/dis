@@ -1,103 +1,132 @@
 package edu.usmp.dis.sit.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-import java.util.Date;
+import org.hibernate.annotations.DynamicUpdate;
 
+
+
+@Entity
+@DynamicUpdate
+@Table(name="user")
 public class User {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ID_USER")
+	private Integer id;
+	
+	@Column(name="F_LAST_NAME")
+	private String f_last_name ;
+	
+	@Column(name="S_LAST_NAME")
+	private String s_last_name;
+	
+	@Column(name="NAME")
+	private String name;
+	
+	@Column(name="MAIL")
+	private String mail;
+	
+	@Column(name="BIRTH_DATE")
+	private String birth_date;//Date
+	
+	@Column(name="TYPE_DOC")
+	private String Type_doc;
+	
+	@Column(name="NUMDOC")
+	private String numdoc;
+	
+	@Column(name="ACCOUNT")
+	private Integer account;
+	
+	@Column(name="CLAVE")
+	private String clave;
 
-	private Integer IdT_Usuario;
-	private String ApePat;
-	private String ApeMat;
-	private String Nombre;
-	private String Email;
-	private Date FechaNac;
-	private String TipoDoc;
-	private String NumDoc;
-	private Date FecRegistro;
-	private Integer Cuenta;
-	private String Clave;
-	private String Active;
-	private Date Update;
 	
-	
-	
-	public Integer getIdT_Usuario() {
-		return IdT_Usuario;
+	public Integer getId() {
+		return id;
 	}
-	public void setIdT_Usuario(Integer idT_Usuario) {
-		IdT_Usuario = idT_Usuario;
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
-	public String getApePat() {
-		return ApePat;
+
+	public String getF_last_name() {
+		return f_last_name;
 	}
-	public void setApePat(String apePat) {
-		ApePat = apePat;
+
+	public void setF_last_name(String f_last_name) {
+		this.f_last_name = f_last_name;
 	}
-	public String getApeMat() {
-		return ApeMat;
+
+	public String getS_last_name() {
+		return s_last_name;
 	}
-	public void setApeMat(String apeMat) {
-		ApeMat = apeMat;
+
+	public void setS_last_name(String s_last_name) {
+		this.s_last_name = s_last_name;
 	}
-	public String getNombre() {
-		return Nombre;
+
+	public String getName() {
+		return name;
 	}
-	public void setNombre(String nombre) {
-		Nombre = nombre;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getEmail() {
-		return Email;
+
+	public String getMail() {
+		return mail;
 	}
-	public void setEmail(String email) {
-		Email = email;
+
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
-	public Date getFechaNac() {
-		return FechaNac;
+
+	public String getBirth_date() {
+		return birth_date;
 	}
-	public void setFechaNac(Date fechaNac) {
-		FechaNac = fechaNac;
+
+	public void setBirth_date(String birth_date) {
+		this.birth_date = birth_date;
 	}
-	public String getTipoDoc() {
-		return TipoDoc;
+
+	public String getType_doc() {
+		return Type_doc;
 	}
-	public void setTipoDoc(String tipoDoc) {
-		TipoDoc = tipoDoc;
+
+	public void setType_doc(String type_doc) {
+		Type_doc = type_doc;
 	}
-	public String getNumDoc() {
-		return NumDoc;
+
+	public String getNumdoc() {
+		return numdoc;
 	}
-	public void setNumDoc(String numDoc) {
-		NumDoc = numDoc;
+
+	public void setNumdoc(String numdoc) {
+		this.numdoc = numdoc;
 	}
-	public Date getFecRegistro() {
-		return FecRegistro;
+
+	public Integer getAccount() {
+		return account;
 	}
-	public void setFecRegistro(Date fecRegistro) {
-		FecRegistro = fecRegistro;
+
+	public void setAccount(Integer account) {
+		this.account = account;
 	}
-	public Integer getCuenta() {
-		return Cuenta;
-	}
-	public void setCuenta(Integer cuenta) {
-		Cuenta = cuenta;
-	}
+
 	public String getClave() {
-		return Clave;
+		return clave;
 	}
+
 	public void setClave(String clave) {
-		Clave = clave;
-	}
-	public String getActive() {
-		return Active;
-	}
-	public void setActive(String active) {
-		Active = active;
-	}
-	public Date getUpdate() {
-		return Update;
-	}
-	public void setUpdate(Date update) {
-		Update = update;
+		this.clave = clave;
 	}
 	
 	
