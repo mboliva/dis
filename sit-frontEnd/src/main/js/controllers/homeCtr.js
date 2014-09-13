@@ -13,6 +13,11 @@ define(['controllers/mainCtr'], function(mainCtr){
 		 			}
 		);
 		
+		
+		$scope.goRegister = function(){
+			$location.path("/registrarse");
+		};
+		
 	}]);
 	
 });

@@ -1,4 +1,4 @@
-define(["controllers/mainCtr","controllers/homeCtr","controllers/proposalsCtr","controllers/formCtr","angularRoute","bootstrapui"],function(){
+define(["controllers/mainCtr","controllers/homeCtr","controllers/registerCtr","controllers/proposalsCtr","controllers/formCtr","angularRoute","bootstrapui"],function(){
 	
 	var app = angular.module("app",[
 		'ngRoute',
@@ -13,9 +13,9 @@ define(["controllers/mainCtr","controllers/homeCtr","controllers/proposalsCtr","
 				templateUrl : "templates/home.html",
 				controller  : "homeCtr"
 			})
-			.when("/propuestas/:entity",{
-				templateUrl : "templates/proposals.html",
-				controller  : "proposalsCtr"
+			.when("/registrarse",{
+				templateUrl : "templates/register.html",
+				controller  : "registerCtr"
 			})
 			.when("/propuesta/:detail/:entity",{
 				templateUrl : "templates/detailProposal.html",
@@ -25,7 +25,7 @@ define(["controllers/mainCtr","controllers/homeCtr","controllers/proposalsCtr","
 				templateUrl : "templates/form.html",
 				controller  : "formCtr"
 			})
-			.otherwise({ redirectTo : "/bienvenido"});
+			.otherwise({ redirectTo : "/"});
 			
 		}]);
 	angular.bootstrap(document, ['app']);
