@@ -1,22 +1,40 @@
 package edu.usmp.dis.sit.dto;
 
-import java.sql.Date;
+import java.io.Serializable;
+
+import com.systemlab.base.annotation.DtoField;
+import com.systemlab.base.dto.BaseDto;
 
 
+/**
+* CardDto
+*
+* @author  Renzo
+* @version 1.0.1
+* @since   2014-09-12 
+*/
 
-public class CardDto {
+public class CardDto extends BaseDto implements Serializable {
+
+	private static final long serialVersionUID = 3486060474728855596L;
 	
-    private Integer id;
+	@DtoField
+	private Integer id;
 	
+	@DtoField
 	private String type_card;
 	
+	@DtoField
 	private String name_card;
 	
+	@DtoField
 	private Integer code_card;
 	
+	@DtoField
 	private Double residue;
 	
-	private Date date_revalidate;
+	@DtoField
+	private String date_revalidate;
 
 	public Integer getId() {
 		return id;
@@ -58,13 +76,12 @@ public class CardDto {
 		this.residue = residue;
 	}
 
-	public Date getDate_revalidate() {
+	public String getDate_revalidate() {
 		return date_revalidate;
 	}
 
-	public void setDate_revalidate(Date date_revalidate) {
+	public void setDate_revalidate(String date_revalidate) {
 		this.date_revalidate = date_revalidate;
 	}
-	
 	
 }

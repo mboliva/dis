@@ -1,39 +1,52 @@
 package edu.usmp.dis.sit.dto;
 
+import java.io.Serializable;
 
-import java.util.Date;
+import com.systemlab.base.annotation.DtoField;
+import com.systemlab.base.annotation.DtoObject;
+import com.systemlab.base.dto.BaseDto;
 
+/**
+* BaseDto
+*
+* @author  Renzo
+* @version 1.0.1
+* @since   2014-09-12 
+*/
 
-public class UserDto {
+public class UserDto extends BaseDto implements Serializable {
 	
-    private Integer id;
+	private static final long serialVersionUID = -5924507792427590539L;
 	
+	@DtoField
 	private String f_last_name ;
 	
+	@DtoField
 	private String s_last_name;
 	
+	@DtoField
 	private String name;
 	
+	@DtoField
 	private String mail;
 	
-	private Date birth_date;
+	@DtoField
+	private String birth_date;
 	
+	@DtoField
 	private String Type_doc;
 	
+	@DtoField
 	private String numdoc;
 	
-	private Integer account;
+	@DtoField
+	private String account;
 	
+	@DtoField
 	private String clave;
-
 	
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	@DtoObject
+	private CardDto card;
 
 	public String getF_last_name() {
 		return f_last_name;
@@ -67,11 +80,11 @@ public class UserDto {
 		this.mail = mail;
 	}
 
-	public Date getBirth_date() {
+	public String getBirth_date() {
 		return birth_date;
 	}
 
-	public void setBirth_date(Date birth_date) {
+	public void setBirth_date(String birth_date) {
 		this.birth_date = birth_date;
 	}
 
@@ -91,11 +104,11 @@ public class UserDto {
 		this.numdoc = numdoc;
 	}
 
-	public Integer getAccount() {
+	public String getAccount() {
 		return account;
 	}
 
-	public void setAccount(Integer account) {
+	public void setAccount(String account) {
 		this.account = account;
 	}
 
@@ -106,6 +119,13 @@ public class UserDto {
 	public void setClave(String clave) {
 		this.clave = clave;
 	}
-	
-	
+
+	public CardDto getCard() {
+		return card;
+	}
+
+	public void setCard(CardDto card) {
+		this.card = card;
+	}
+
 }

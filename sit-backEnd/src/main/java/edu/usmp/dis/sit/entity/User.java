@@ -1,21 +1,36 @@
 package edu.usmp.dis.sit.entity;
 
+import java.io.Serializable;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicUpdate;
 
+import com.systemlab.base.entity.BaseEntity;
 
+/**
+* User
+*
+* @author  Renzo
+* @version 1.0.1
+* @since   2014-09-12 
+*/
 
 @Entity
 @DynamicUpdate
 @Table(name="user")
-public class User {
+public class User extends BaseEntity implements Serializable {
 	
+	private static final long serialVersionUID = 8889971441402537412L;
+
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID_USER")
@@ -34,7 +49,7 @@ public class User {
 	private String mail;
 	
 	@Column(name="BIRTH_DATE")
-	private String birth_date;//Date
+	private Date birth_date;
 	
 	@Column(name="TYPE_DOC")
 	private String Type_doc;
@@ -43,12 +58,15 @@ public class User {
 	private String numdoc;
 	
 	@Column(name="ACCOUNT")
-	private Integer account;
+	private String account;
 	
 	@Column(name="CLAVE")
 	private String clave;
-
 	
+	@ManyToOne
+	@JoinColumn(name = "ID_CARD")
+	private Card card;
+
 	public Integer getId() {
 		return id;
 	}
@@ -89,11 +107,11 @@ public class User {
 		this.mail = mail;
 	}
 
-	public String getBirth_date() {
+	public Date getBirth_date() {
 		return birth_date;
 	}
 
-	public void setBirth_date(String birth_date) {
+	public void setBirth_date(Date birth_date) {
 		this.birth_date = birth_date;
 	}
 
@@ -113,11 +131,11 @@ public class User {
 		this.numdoc = numdoc;
 	}
 
-	public Integer getAccount() {
+	public String getAccount() {
 		return account;
 	}
 
-	public void setAccount(Integer account) {
+	public void setAccount(String account) {
 		this.account = account;
 	}
 
@@ -128,7 +146,15 @@ public class User {
 	public void setClave(String clave) {
 		this.clave = clave;
 	}
+
+	public Card getCard() {
+		return card;
+	}
+
+	public void setCard(Card card) {
+		this.card = card;
+	}
 	
-	
+
 }
 
