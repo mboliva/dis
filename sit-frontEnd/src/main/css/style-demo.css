@@ -1,0 +1,352 @@
+
+body {
+	background-color: #0053A1;
+}
+li{
+	overflow:hidden;
+	padding-bottom: 15px;
+}
+li div{
+	overflow:hidden;
+}
+.right {
+    text-align: right;
+    float: right;
+}
+.page-header {
+	margin: 0px 0 20px;
+}
+.column-porposal td{
+	text-align: justify;
+}
+.btn-porposal-ppc{
+	color : white;
+	margin-bottom: 15px;
+	border-color: #fff;
+	border-width: 2px;
+	background-color: #DA291C;
+}
+.btn-porposal-ppc:hover{
+	color : white;
+	border-color: #919D9D;
+	background-color: #F81E1E;
+}
+/* ==================================================
+   	Intro
+================================================== */
+.carousel {
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.name-party{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: #009800;
+	font-size: 45px;
+	font-style: italic;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.p1{
+	margin-top: 90px;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: slidep1;
+	-webkit-animation-name: slidep1;
+}
+.p2{
+	margin-top: 30px;
+	margin-left: 15%;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: slidep2;
+	-webkit-animation-name: slidep2;
+}
+.p3{
+	margin-top: 30px;
+	margin-left: 30%;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: slidep3;
+	-webkit-animation-name: slidep3;
+}
+.district{
+	font-size: 50px;
+	color: #FF3434;
+	font-weight: bold;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.intro{
+	padding: 20px 18px 30px;
+	background-image: url('../img/intro/logo-alter2.png');
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@-moz-keyframes slidep1 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidep1 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+@-moz-keyframes slidep2 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:50%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidep2 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:45px;
+    width:100%;
+  }
+}
+
+@-moz-keyframes slidep3 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:85px;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidep3 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:85px;
+    width:100%;
+  }
+}
+/* ==================================================
+   	Social Network
+================================================== */
+.sn{
+	padding-bottom: 0px;
+}
+.sn-icon{
+	font-size: 2em;
+}
+.btn-sn-ppc{
+	color: #5E5E5E;
+	background-color: #FAFAFA;
+	border: 1px solid transparent;
+	border-color: #DA291C;	
+}
+.btn-facebook, .btn-youtube{
+	border-color: #fff;
+	border-width: 1px;
+}
+/* ==================================================
+   	Home
+================================================== */
+@font-face {
+    font-family: app;
+    src: url(../fonts/proximanova-semibold-webfont.ttf);
+}
+.carousel-indicators, .carousel-control{
+	visibility: hidden;
+}
+.home{
+	/* background-color: #0033A0; */
+}
+.home h2{
+	color: #fff;
+	font-family: app;
+}
+.menu{
+	list-style: none;
+	padding: 15px 29px 10px;
+ 	margin: 0 auto 0; 
+	/* background-color: #0033A0; */
+}
+.btn-ppc-home{
+	font-family: app;
+	font-size: 26px;
+	color: #0045AD;
+	padding: 5px 16px;
+	background-color: #F0F0F0;
+	border: 2px solid transparent;
+	border-color: #EE3A43;	
+}
+.btn-ppc-home:hover{
+	color: #0F2446;
+}
+
+/* ==================================================
+   Header
+================================================== */
+.img-logox{
+	min-width: 50px;
+}
+.nav-button{	
+	margin-top: 16.5px;
+}
+.nav-title {
+	text-align: center;
+	font-size: 21px;
+	margin-top: 16.5px;
+	font-weight: bold;
+}
+.nav-title-resp{
+	text-align: center;
+	font-size: 22px;	
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+.thumbnail{
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+.header-right {
+	padding-right: 15px;
+}
+.header-left {
+	padding-left: 15px;		
+}
+/* ==================================================
+   Detail Proposal
+================================================== */
+.detail-proposal{
+	text-align: justify;
+}
+.panel-sl{
+	border-color: #EA3D02;
+}
+.panel-sl .panel-heading{
+	background-color: #DA291C;
+}
+
+/* ==================================================
+   Proposals - Comments
+================================================== */
+
+.proposal-container{
+	
+}
+
+.table-proposals{
+	background-color: white;
+}
+
+.description-prop{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+.img-like{
+	min-width: 30px;
+}
+.filter-bar{
+	padding-top: 8px;
+	background-color: #FFFFFF;
+	border-color: #EE3A43;
+}
+.filter{
+	margin-bottom: 0;
+}
+.filter label{
+	color: black;
+	font-size: 16px;
+}
+.page-center{
+	float:right;
+	position:relative;
+	left:-50%;
+	text-align:left;
+}
+.page-center ul{
+	list-style:none; 
+	position:relative;
+	left:50%;
+}
+.page-footer{
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+.pager a{
+	cursor : pointer;
+	border-color: #DA291C !important;	
+}
+.pagination a{
+	cursor : pointer;
+	border-color: #DA291C !important;
+}
+.pagination>.active>a, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus{
+	background-color: #0033A0 !important;
+	border-color: #DA291C !important;
+}
+/* ==================================================
+   MODAL
+================================================== */
+.modal-dialog{
+	max-width: 400px;
+	margin: 30px auto;
+}
+
+/* ==================================================
+   APP
+================================================== */
+.btn-ppc{
+	color: #ffffff;
+	background-color: #DA291C;
+	border: 2px solid transparent;
+	border-color: #DA291C;
+}
+.btn-ppc:hover,
+.btn-ppc:focus,
+.btn-ppc:active,
+.btn-ppc.active{
+	color: #FEE6E6;
+}
+#show-more{
+	border: 1px solid transparent;
+	border-color: #EA3D02;
+	background-color: white;
+	color: #EA3D02;
+	font-weight: bold;
+}
