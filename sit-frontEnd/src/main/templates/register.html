@@ -1,0 +1,126 @@
+<div class="container">
+<div class="navbar navbar-default nav-header">
+	<div class="col-xs-3 col-md-2 header-left"> <a href="#/propuestas/tuspropuestas" class="btn btn-ppc btn-sm nav-button"><span class="glyphicon glyphicon-arrow-left"></span></a></div>
+	<div class="col-xs-6 col-md-8 header-center"> 
+		<p class="nav-title">Barack Obama</p>
+		<p class="nav-title-resp">Barack Obama</p>
+	</div>
+	<div class="col-xs-3 col-md-2 header-right"> <button type="button" class="thumbnail pull-right nav-logo" ng-click="showLogo()"><img src="img/logo_x.jpg" class="img-responsive img-logox" alt="Solidaridad Nacional"></button> </div>
+</div>
+<form class="form-horizontal" ng-submit="send_comment()">
+	<div class="panel panel-default">
+		<div class="panel-body">
+		
+			<div class="form-group">
+				<label class="col-md-5 control-label" for="author">Cuento con tarjeta</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="radio"
+						placeholder="Nombre">
+				</div>
+				
+				<label class="col-md-2 control-label" for="author">No cuento con tarjeta</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="radio"
+						placeholder="Nombre">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Codigo Tarjeta</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Correo</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Nombre</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Fec. Nac.</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Apellido Paterno</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Tipo Doc.</label>
+				<div class="col-md-3">
+					<select ng-model="category" ng-options="category.id as category.name for category in categories" id="category" class="form-control">
+						<option value="">Seleccione Categoria</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Apellido Materno</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Nro. Doc.</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Usuario</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Tipo Tarjeta</label>
+				<div class="col-md-3">
+					<select ng-model="category" ng-options="category.id as category.name for category in categories" id="category" class="form-control">
+						<option value="">Seleccione Categoria</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Clave</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+				<label class="col-md-3 control-label" for="author">Codigo</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="author">Confirmar Clave</label>
+				<div class="col-md-2">
+					<input ng-model="comment.author" id="author" type="text"
+						placeholder="Nombre" class="form-control input-md">
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</form>
+</div>
