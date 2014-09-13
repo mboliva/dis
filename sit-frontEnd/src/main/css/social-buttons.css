@@ -783,6 +783,7 @@ fieldset[disabled] .btn-weibo:active,
 fieldset[disabled] .btn-weibo.active {
   background-color: #f85959;
   border-color: #e64141;
+  
 }
 
 .btn-xing {
